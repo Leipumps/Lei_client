@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import comingsoon from '../src/asset/cmsoon.jpg'
+import comingsoon from '../src/asset/cm.jpg'
 
 function App() {
   return (
