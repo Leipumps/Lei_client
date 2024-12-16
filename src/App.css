@@ -1,9 +1,11 @@
+/* Base Styles */
 .App {
   text-align: center;
+  padding: 1rem; /* Add padding for better spacing */
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin; /* Adjusted size for smaller screens */
   pointer-events: none;
 }
 
@@ -20,19 +22,61 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin); /* Dynamic font size */
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+  font-size: calc(10px + 1vmin); /* Responsive link font size */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive Image */
+img {
+  max-width: 90%; /* Scale image proportionally within container */
+  height: auto;   /* Maintain aspect ratio */
+  margin: 1rem 0;
+}
+
+/* Responsive Media Queries */
+
+/* For small devices (phones, < 600px) */
+@media (max-width: 600px) {
+  .App-header {
+    font-size: calc(10px + 1.5vmin); /* Smaller font size */
+    padding: 1rem; /* Reduce padding for smaller screens */
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-logo {
+    height: 30vmin; /* Larger logo for better visibility */
+  }
+
+  img {
+    max-width: 100%; /* Full width for small screens */
+    height: auto;
+  }
+}
+
+/* For medium devices (tablets, 600px - 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .App-header {
+    font-size: calc(12px + 2vmin); /* Adjust font size for tablets */
+    padding: 2rem;
+  }
+
+  .App-logo {
+    height: 25vmin; /* Adjust logo size */
+  }
+}
+
+/* For large devices (desktops, > 1024px) */
+@media (min-width: 1024px) {
+  .App-header {
+    font-size: calc(14px + 2vmin); /* Slightly larger font for desktops */
+    padding: 3rem;
+  }
+
+  .App-logo {
+    height: 15vmin; /* Smaller logo for large screens */
   }
 }
