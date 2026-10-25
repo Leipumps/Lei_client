@@ -298,7 +298,7 @@ function Footer() {
               border
             >
               <MuiLink
-                href="tel:+919885065511"
+                href="tel:+919003427043"
                 underline="none"
                 sx={{
                   color: "#647792",
@@ -314,7 +314,27 @@ function Footer() {
                   },
                 }}
               >
-                +91 90034 27043<br/>
+                +91 90034 27043
+                
+              </MuiLink>
+              <MuiLink
+                href="tel:+919003427043"
+                underline="none"
+                sx={{
+                  color: "#647792",
+
+                  fontFamily: '"Inter", sans-serif',
+
+                  fontSize: "14px",
+
+                  whiteSpace: "nowrap",
+
+                  "&:hover": {
+                    color: "#f52f3b",
+                  },
+                }}
+              >
+                <br/>
                 +91 84895 29425
 
               </MuiLink>
