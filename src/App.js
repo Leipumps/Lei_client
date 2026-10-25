@@ -1,11 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 import comingsoon from '../src/asset/cm.jpg'
+import Header from './components/Header/Header';
+import { Router,Routes,Route} from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <img src={comingsoon}/>
+        <Header />
+        <Routes>
+<Route path="/" element={<Home/>}/>
+<Route path="/about-us" element={<About/>} />
+        </Routes>
+        <Footer />
+      
     </div>
   );
 }
